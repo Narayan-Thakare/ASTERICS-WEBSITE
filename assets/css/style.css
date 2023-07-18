@@ -4,8 +4,63 @@
  * Facebook: https://fb.com/fh5co
  * URL: https://freehtml5.co
  */
+ /* For mobile devices */
+ @media (max-width: 767px) {
+  .fh5co-home-banner .card-video {
+    height: 500px; /* Increase the height as needed for mobile devices */
+  }
+}
 
 
+#navitemlogo{
+
+  font-family: Nunito,sans;
+  color: white ;
+  size: 990%;
+}
+
+@media (max-width: 768px) {
+  #navitemlogo {
+    text-align: left;
+  }
+}
+
+#btn btn-primary ml-auto{
+
+
+
+
+
+
+  background-color: rgb(122, 129, 128);
+  
+}
+
+
+
+
+/* for size of display
+@media (min-width: 768px) {
+  .fh5co-home-banner .card-video {
+    height: 700px; /* Increase the height as needed for tablets */
+  /* }
+} */
+
+/* For larger screens */
+/* @media (min-width: 992px) {
+  .fh5co-home-banner .card-video {
+    height: 1000px; /* Increase the height as needed for larger screens */
+  /* } */
+/* }  */ */
+
+ */
+
+
+
+
+ 
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .mt-4 stats-you-should-know-section{
         display: grid;
@@ -45,11 +100,49 @@ stats-you-should-know-section .stats-cards-swiper-container .stats-card-swiper-w
   margin-right: 20px; /* Adjust the margin as needed */
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.swiper-card-w-100 .stats-card-value {
+  font-size: 5vw; /* Adjust the value based on your preference */
+}
+
+.swiper-parent-container {
+  max-height: 400px; /* Set the desired height for the container */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds the container height */
+}
+
+/* Add styles for the scrollbar */
+.swiper-scrollbar {
+  width: 5px;
+  background-color: #f1f1f1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.swiper-scrollbar::before {
+  content: "";
+  display: block;
+  width: 5px;
+  background-color: #888;
+  border-radius: 2.5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .swiper-parent-container {
+    max-height: 300px;
+  }
+}
 
 
-
+/* /////////////////////////////////////////////////////////////////////////////// */
 
 
 
@@ -75,41 +168,99 @@ font-family: "Trirong", serif;
 
 }
 
-
-.tcs-custom-container{
-
+/* Default styles for .tcs-custom-container */
+.tcs-custom-container {
   padding: 3.5%;
   display: block;
-
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-
-    
-    -webkit-text-size-adjust: 100%;
-
-    box-sizing: inherit;
-    position: relative !important;
-}
-
-stats-card-value large__size{
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 1rem;
   font-weight: 400;
-  color: #212529 ;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: inherit;
+  position: relative !important;
+}
+
+/* General styles for the box container */
+.tcs-custom-container {
+  padding: 3.5%;
+  /* Add other styles as needed */
+}
+
+/* General styles for the box */
+.stats-card-swiper-slider-card {
+  border: 1px solid #ccc;
+  display: flex;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 767px) {
+  .swiper-card-w-25 {
+    width: 100% !important;
+  }
 }
 
 
+/*  for data container 
+@media (min-width: 768px) {
+  .stats-you-should-know-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .swiper-card-swiper-slide {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+} */
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////// */
+/* For mobile devices */
+@media (max-width: 767px) {
+  .stats-card-swiper-slide {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* For tablets and larger devices */
+@media (min-width: 768px) {
+  .stats-card-swiper-slide {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+/* //////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* 
+@media (max-width: 767px) {
+  .stats-card-swiper-slide {
+    flex: 0 0 100% !important;
+    max-width: 50% !important;
+  }
+}
+
+/* For tablets and larger devices */
+/* @media (min-width: 768px) {
+  .stats-card-swiper-slide {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+} */ */
 
 
 
 
 
 
-
-
-
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
 
 .description{
 font-family: "Amazon Ember", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -873,8 +1024,9 @@ footer {
       footer .contact-form button:hover, footer .contact-form button:visited {
         background: #b90b50; }
   footer .copy {
-    background: #282526;
-    text-align: center; }
+    background: #212529;
+    text-align: center;
+  height:900%; }
     footer .copy p {
       color: #fff; }
     footer .copy a {
