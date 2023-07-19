@@ -35,7 +35,15 @@
   background-color: rgb(122, 129, 128);
   
 }
-
+@media (max-width: 767px) { /* Custom styles for screens up to 767px wide */
+  .custom-button {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+}
 
 
 
