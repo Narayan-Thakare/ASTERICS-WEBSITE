@@ -305,8 +305,8 @@ font-family: "Trirong", serif;
 /* Position video to the left for screens up to 480px wide */
 @media (max-width: 768px) {
   .card-video {
-      width: 600px;
-      height: 450px;
+      width: 370px;
+      height: 650px;
       margin: 0 auto; /* Center horizontally using margin auto */
   }
 }
@@ -315,36 +315,6 @@ font-family: "Trirong", serif;
  /* Default video size for screens wider than 768px */
  
 
-/* Center the video for screens up to 768px wide */
-@media (max-width: 768px) {
-  .card-video {
-      width: 600px;
-      height: 450px;
-      margin: 0 auto; /* Center horizontally using margin auto */
-  }
-}
-
-/* Zoom video and center for screens up to 480px wide */
-@media (max-width: 480px) {
-  .card-video {
-      width: 900px;
-      height: 500px;
-      margin: 0 auto; /* Center horizontally using margin auto */
-      transform: scale(1.5); /* Set the desired zoom level */
-      position: relative; /* Use position relative for centering */
-      top: 30%; /* Move the video down by 30% of its height */
-      left: 50%; /* Move the video right by 50% of its width */
-      transform-origin: center; /* Set the transform origin to center */
-      transform: translate(-50%, -50%) scale(1.5); /* Scale and reposition the video */
-  }
-}
-
-/* Position video to the right for screens up to 320px wide */
-@media (max-width: 320px) {
-  .video-container {
-      text-align: right;
-  }
-}
 
 .video-container {
   display: flex;
