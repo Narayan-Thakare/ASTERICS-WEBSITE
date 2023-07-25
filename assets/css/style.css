@@ -7,7 +7,7 @@
  /* For mobile devices */
  @media (max-width: 767px) {
   .fh5co-home-banner .card-video {
-    height: 500px; /* Increase the height as needed for mobile devices */
+    height: 550px; /* Increase the height as needed for mobile devices */
   }
 }
 
@@ -25,11 +25,32 @@
   }
 }
 
+
+
+/* Default font size and alignment for larger screens */
+#navitemlogo {
+  font-size: 38px;
+  text-align: left;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  #navitemlogo {
+    font-size: 20px; /* Adjust the size for smaller screens */
+    text-align: left; /* Align center for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  #navitemlogo {
+    font-size: 25px; /* Adjust the size for even smaller screens */
+    text-align: left; /* Align center for even smaller screens */
+  }
+}
+
+
 #btn btn-primary ml-auto{
-
-
-
-
 
 
   background-color: rgb(122, 129, 128);
@@ -38,30 +59,36 @@
 @media (max-width: 767px) { /* Custom styles for screens up to 767px wide */
   .custom-button {
     position: absolute;
-    bottom: 1px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     
   }
 }
 
+#ml-auto{
+
+text-align: right;
 
 
-/* for size of display
-@media (min-width: 768px) {
+
+}
+/* Increase the height as needed for tablets */
+ /* for size of display */
+/* @media (min-width: 768px) {
   .fh5co-home-banner .card-video {
-    height: 700px; /* Increase the height as needed for tablets */
-  /* }
-} */
-
+    height: 100px; 
+   }
+}  */
+/* Increase the height as needed for larger screens */
 /* For larger screens */
-/* @media (min-width: 992px) {
+ /* @media (min-width: 992px) {
   .fh5co-home-banner .card-video {
-    height: 1000px; /* Increase the height as needed for larger screens */
-  /* } */
-/* }  */ */
+    height: 1000px; 
+   }
+ }   */
 
- */
+ 
 
 
 
@@ -261,12 +288,70 @@ font-family: "Trirong", serif;
     flex: 0 0 calc(50% - 30px);
     max-width: calc(50% - 30px);
   }
-} */ */
+} */ 
 
 
 
+/* Center the video for screens up to 480px wide */
+  /* Center the video for screens up to 768px wide */
+  @media (max-width: 768px) {
+    .card-video {
+        width: 600px;
+        height: 450px;
+        margin: 0 auto; /* Center horizontally using margin auto */
+    }
+}
 
+/* Position video to the left for screens up to 480px wide */
+@media (max-width: 768px) {
+  .card-video {
+      width: 600px;
+      height: 450px;
+      margin: 0 auto; /* Center horizontally using margin auto */
+  }
+}
 
+/* Center video for screens up to 480px wide */
+ /* Default video size for screens wider than 768px */
+ 
+
+/* Center the video for screens up to 768px wide */
+@media (max-width: 768px) {
+  .card-video {
+      width: 600px;
+      height: 450px;
+      margin: 0 auto; /* Center horizontally using margin auto */
+  }
+}
+
+/* Zoom video and center for screens up to 480px wide */
+@media (max-width: 480px) {
+  .card-video {
+      width: 900px;
+      height: 500px;
+      margin: 0 auto; /* Center horizontally using margin auto */
+      transform: scale(1.5); /* Set the desired zoom level */
+      position: relative; /* Use position relative for centering */
+      top: 30%; /* Move the video down by 30% of its height */
+      left: 50%; /* Move the video right by 50% of its width */
+      transform-origin: center; /* Set the transform origin to center */
+      transform: translate(-50%, -50%) scale(1.5); /* Scale and reposition the video */
+  }
+}
+
+/* Position video to the right for screens up to 320px wide */
+@media (max-width: 320px) {
+  .video-container {
+      text-align: right;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -312,7 +397,7 @@ h2 {
     font-family: "PT-Sans-Bold";
     font-size: 16px;
     text-transform: uppercase;
-    padding: 15px 25px;
+    padding: 15px 15px;
     color: #fff; }
   .maine-menu .navbar-nav li.active a, .maine-menu .navbar-nav li:hover a, .maine-menu .navbar-nav li:visited a {
     color: #d86ad8; }
@@ -342,7 +427,8 @@ h2 {
         padding: 7px 10px;
         color: #fff; }
     .maine-menu .collapse.show {
-      background: rgba(0, 0, 0, 0.5); } }
+      background:  #181c29; } }
+      /* rgba(180, 0, 251, 0.5) */
 
 .card {
   border: none;
@@ -785,7 +871,7 @@ h2 {
 
 .activity {
   background: #f3e7e8;
-  padding-bottom: 50px; }
+  padding-bottom: 0px; }
   .activity .recent {
     margin-top: 0; }
   .activity h2 {
